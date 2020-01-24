@@ -1,0 +1,7 @@
+﻿@model List<Product_mvc.Models.Product>
+
+
+@foreach (var product in Model)
+{
+    @Html.Partial("ProtoType", product)
+}

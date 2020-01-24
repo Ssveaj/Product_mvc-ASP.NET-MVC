@@ -1,0 +1,33 @@
+﻿
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model Product_mvc.Models.Product
+
+    <table width="400" border="2" align="center">
+
+        <tr>
+            <td>
+                <img src="~/Images/@Model.Photo" width="200" height="200" />
+            </td>
+            <td>
+                <table frame="box" rules="all" align="center">
+                    <tr>
+                        <td>Produkt Id </td>
+                        <td align="center">@Model.Id</td>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td align="center">@Model.Name</td>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td align="center">@Model.Price</td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+
+    </table>
